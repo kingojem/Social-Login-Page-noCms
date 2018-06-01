@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+<html manifest="cache.appcache">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="GistMe" >
+    <meta name="robot" content="nofollow">
+    <title>Gist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen and (color)" href="main.css" />
+    
+</head>
+<body>
+   <header>
+       <img src ="images/social_logo.png" />
+       <nav>
+            <ul class = "container">
+                <li class ="navigation-1"><a style ="color:#0000ff;" href="index.html " >Login</a></li>
+                <li class ="navigation-3"><a href ="#"> About </a>
+                    <ul>
+                            <li><a href ="#">Blog</a></li>
+                            <li><a href="#">FaQ</a></li>
+                            <li><a href ="#">Company</a></li>
+                    </ul>        
+                </li>
+                <li class ="navigation-4"><a href="#">Business</a></li>
+            </ul>
+        </nav>
+   </header>
+
+   <div id="mainContent">
+   <h1 id="error" > </h1>
+           
+       <div class ="container">
+           <form name="login" id="login" method="POST" action="loginFormRequest.php">
+                <label for="username">Username</label> <input type ="text" required aria-required="true" placeholder="@example12" maxlength="10" name="username" id="username" /><br />
+                <label for ="password">Password</label> <input type="password" required aria-required="true" placeholder="***************"max-length="15" name="password" id="password" /> <br />
+                <input type ="submit" value="Log in" id="submit" class="submit" name="submit"/><br>
+                    <span class ="register"> New User? <a  style ="text-decoration:none; color: green " href = "register.html">Register</a> Now</span>
+           </form>
+       </div>
+   </div>
+   <footer class="footNote">
+        <a href="#"><img src ="images/googleplay.png" alt="Download On Google Play" /></a> <a href="#"><img src ="images/appstore.png" alt="Download On Apple/iOS Store" /></a>
+        <a href="" id="privacyPolicy"> Privacy Policy</a> <a href="" id="termOfUse">Term Of Use</a>
+        <span>Gist&copy All right Reserved</span>
+   </footer>
+    <script src="main.js"></script>
+</body>
+</html> 
